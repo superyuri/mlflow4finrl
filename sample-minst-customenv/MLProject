@@ -1,0 +1,17 @@
+name: minst
+
+conda_env: config/conda_environment.yaml
+
+entry_points:
+  main:
+    parameters:
+      # data_file: path
+      batch_size: {type: float, default: 64}
+      test_batch_size: {type: float, default: 1000}
+      epochs: {type: float, default: 1}
+      lr: {type: float, default: 0.01}
+      momentum: {type: float, default: 0.5}
+      enable_cuda: {type: string, default: True}
+      seed: {type: float, default: 1}
+      log_interval: {type: float, default: 100}
+    command: "python finrl_unsupported_artifact.py --batch-size {batch_size} --test-batch-size {test_batch_size} --epochs {epochs} --lr {lr} --momentum {momentum} --enable-cuda {enable_cuda} --seed {seed} --log-interval {log_interval}"

@@ -1,0 +1,10 @@
+name: finrl_v0
+
+conda_env: config/conda_environment.yaml
+
+entry_points:
+  main:
+    parameters:
+      # data_file: path
+      seed: {type: float, default: 1}
+    command: "python dummy.py"

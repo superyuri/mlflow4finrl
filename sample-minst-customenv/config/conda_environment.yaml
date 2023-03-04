@@ -1,0 +1,13 @@
+name: finrl_v1
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python
+  - pip
+  - pip:
+    - mlflow
+    - cloudpickle
+  - pytorch
+  - torchvision
+  - tensorboardX
