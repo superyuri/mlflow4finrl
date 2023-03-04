@@ -30,11 +30,11 @@ example: run Minst Sample from source
 
 example: run Minst Sample from github
 
-        mlflow run mlflow run git@github.com:superyuri/mlflow4finrl.git#sample-minst
+        mlflow run git@github.com:superyuri/mlflow4finrl.git#sample-minst
 
 example: run Minst Sample for custom env from github
 
-        mlflow run mlflow run git@github.com:superyuri/mlflow4finrl.git#sample-minst-customenv
+        mlflow run git@github.com:superyuri/mlflow4finrl.git#sample-minst-customenv
 
 
 ## TODO 
