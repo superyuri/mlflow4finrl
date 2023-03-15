@@ -1,0 +1,32 @@
+name: finrl_v0
+
+
+conda_env: config/conda_environment_fix.yaml
+# conda_env: config/conda_environment.yaml
+
+entry_points:
+  main:
+    parameters:
+
+      # full training
+      train_start_date: {type: string, default: '2009-05-01'}
+      train_end_date: {type: string, default: '2020-07-01'}
+      trade_start_date: {type: string, default: '2020-07-01'}
+      trade_end_date: {type: string, default: '2021-10-31'}
+      total_timesteps: {type: float, default: 40000}
+      
+      # fast training
+      # train_start_date: {type: string, default: '2019-05-01'}
+      # train_end_date: {type: string, default: '2020-07-01'}
+      # trade_start_date: {type: string, default: '2020-07-01'}
+      # trade_end_date: {type: string, default: '2020-10-31'}
+      # total_timesteps: {type: float, default: 1000}
+    command: |
+      ipython Stock_NeurIPS2018_SB3_mlflow.py -- \
+      --train_start_date {train_start_date} \
+      --train_end_date {train_end_date} \
+      --trade_start_date {trade_start_date} \
+      --trade_end_date {trade_end_date} \
+      --total_timesteps {total_timesteps}
+
+

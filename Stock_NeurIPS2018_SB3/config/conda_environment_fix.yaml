@@ -1,0 +1,22 @@
+name: finrl_v1
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python==3.10
+  # FinRL
+  - swig==4.1.1
+  - tensorboard==2.12.0
+  - pip
+  - pip:
+    # self added
+    # - plotly==5.13.1
+    # mlflow 项目
+    - mlflow==2.2.1
+    - cloudpickle==2.2.1
+    # FinRL 项目
+    - wrds==3.1.6  
+    # - swig==4.1.1
+    # - git+file:///home/edward/src/FinRL
+    - git+https://github.com/AI4Finance-Foundation/FinRL.git@485a3749c193cc597d97f4c5ff31676faa2c277f
+    # - finrl==0.3.6
