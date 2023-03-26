@@ -34,13 +34,13 @@ The main folder mlflow4finrl has several subfolders contains mlflow projects.
 
 ## Run a Mlflow project
 
-example: run Stock_NeurIPS2018_SB3 for custom env from github
+example: run cryptocurrency_trading for custom env from github
 
-        mlflow run git@github.com:superyuri/mlflow4finrl.git#Stock_NeurIPS2018_SB3
+        mlflow run git@github.com:superyuri/mlflow4finrl.git#cryptocurrency_trading
     
-example: run Stock_NeurIPS2018_SB3 from source
+example: run cryptocurrency_trading from source
 
-        mlflow run ./Stock_NeurIPS2018_SB3
+        mlflow run ./cryptocurrency_trading
 
 example: run Minst Sample from github
 

@@ -1,0 +1,39 @@
+name: finrl_v0
+
+
+conda_env: config/conda_environment_fix.yaml
+# conda_env: config/conda_environment.yaml
+
+entry_points:
+  main:
+    parameters:
+
+      # full training
+      # train_start_date: {type: string, default: '2009-05-01'}
+      # train_end_date: {type: string, default: '2020-07-01'}
+      # test_start_date: {type: string, default: '2020-07-01'}
+      # test_end_date: {type: string, default: '2021-10-31'}
+      # total_timesteps: {type: float, default: 40000}
+      
+      # fast training
+      train_start_date: {type: string, default: '2022-07-01'}
+      train_end_date: {type: string, default: '2022-08-31'}
+      test_start_date: {type: string, default: '2022-09-01'}
+      test_end_date: {type: string, default: '2022-09-30'}
+      total_timesteps: {type: float, default: 10000}
+      
+      # min training
+      # train_start_date: {type: string, default: '2022-08-20'}
+      # train_end_date: {type: string, default: '2022-08-31'}
+      # test_start_date: {type: string, default: '2022-09-01'}
+      # test_end_date: {type: string, default: '2022-09-05'}
+      # total_timesteps: {type: float, default: 1000}
+    command: |
+      python main.py \
+      --train_start_date {train_start_date} \
+      --train_end_date {train_end_date} \
+      --test_start_date {test_start_date} \
+      --test_end_date {test_end_date} \
+      --total_timesteps {total_timesteps}
+
+

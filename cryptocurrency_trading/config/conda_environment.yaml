@@ -1,0 +1,18 @@
+name: finrl_v1
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python==3.10
+  # FinRL
+  - swig
+  - tensorboard
+  - pip
+  - pip:
+    # mlflow references
+    - mlflow
+    - cloudpickle
+    # FinRL references
+    - wrds
+    - git+https://github.com/superyuri/FinRL.git
+    # - finrl
